@@ -25,8 +25,8 @@ kosh delete 42
 
 You will be then prompted to write a confirmation text to affirm your decision to delete the credential.
 :::caution
-Deleted credentials can in no way be recovered. They are wiped completely of the database, and for security the freed up
-memory is re-written with 0s.
+When you delete a credential in Kosh, it is permanently and irreversibly removed.
+The entry is wiped from the encrypted database, and the freed memory is securely overwritten to prevent any possibility of recovery.
 :::
 
 ## What’s Next?

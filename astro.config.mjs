@@ -22,6 +22,7 @@ export default defineConfig({
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
+						{ label: 'Installation', slug: 'guides/installation' },
 						{ label: 'Getting Started', slug: 'guides/getting-started' },
 						{ label: 'Add Your First Credential', slug: 'guides/add-credential'},
 						{ label: 'Retrieve A Credential', slug: 'guides/retrieve-credential'},

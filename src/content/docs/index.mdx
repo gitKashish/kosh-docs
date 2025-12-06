@@ -1,40 +1,70 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: Kosh
+description: A fast, secure, local-first password manager powered by modern cryptography.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Secure. Simple. Open.
   image:
-    file: ../../assets/houston.webp
+    alt: Kosh banner
+    dark: ../../assets/kosh_mono_light.svg
+    light: ../../assets/kosh_mono.svg
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Get Started
+      link: /guides/getting-started/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: View on GitHub
+      link: https://github.com/gitKashish/kosh
       icon: external
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## Why Kosh?
+
+Kosh is a **local-first, encrypted password manager** built for developers, sysadmins, and privacy-focused users.  
+Everything stays on your machine — no cloud, no tracking, no dependencies.
+
+It's built with **Curve25519**, **Argon2id**, and **ChaCha20-Poly1305**, wrapped in a fast and intuitive CLI.
+
+## Explore Kosh
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+
+  <Card title="Install Kosh" icon="download">
+    Learn how to install Kosh via Go, source builds, or binaries.
+    <br /><br />
+    <a href="/installation/">Go to Installation →</a>
+  </Card>
+
+  <Card title="Quick Start" icon="rocket">
+    Initialize your vault, add credentials, and retrieve your first entry.
+    <br /><br />
+    <a href="/guides/getting-started/">Start Using Kosh →</a>
+  </Card>
+
+  <Card title="Command Reference" icon="laptop">
+    Browse every CLI command with detailed examples and options.
+    <br /><br />
+    <a href="/reference/commands/">See Commands →</a>
+  </Card>
+
+  <Card title="Adaptive Search" icon="magnifier">
+    Learn how Kosh scores, ranks, and finds credentials instantly.
+    <br /><br />
+    <a href="/adaptive-search/">View Search Algorithm →</a>
+  </Card>
+
+  <Card title="Architecture" icon="setting">
+    Explore the internal design: crypto, database, and vault structure.
+    <br /><br />
+    <a href="/architecture/">Read Architecture →</a>
+  </Card>
+
+  <Card title="Contribute" icon="heart">
+    Help improve Kosh! Learn how to build, test, and contribute.
+    <br /><br />
+    <a href="https://github.com/gitKashish/kosh">Open GitHub →</a>
+  </Card>
+
 </CardGrid>

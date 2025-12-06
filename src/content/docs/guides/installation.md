@@ -38,7 +38,6 @@ go build
 ```
 
 This compiles the binary for your current platform and outputs `kosh` in the project root.
-
 ---
 
 ## Verify Installation

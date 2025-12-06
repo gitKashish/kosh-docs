@@ -11,6 +11,7 @@ You own your data — nothing leaves your machine.
 
 After installing `kosh` we first have to setup a master password by initializing the vault, as follow:
 
+If you haven't installed, check the [installation steps](/guides/installation)
 ### Initialize Your Encrypted Vault
 
 Create a new encrypted SQLite vault in your current directory:

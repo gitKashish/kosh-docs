@@ -1,25 +1,31 @@
 ---
 title: Install Kosh
-description: A guide to install kosh.
+description: How to install Kosh, the local-first encrypted password manager.
 ---
-## Install Kosh
+
+:::note[Prerequisites]
+- Go **1.24+**
+:::
+
 Kosh can be installed in two ways:
 
-1. **Using Go Install** (recommended)  
+1. **Using `go install`** (recommended)  
 2. **Building from source**
 
 ---
 
 ## Using Go Install (Recommended)
 
-The simplest and fastest way to install Kosh:
+The quickest way to install Kosh is:
 
 ```bash
 go install github.com/gitKashish/kosh@latest
 ````
 
-This will place the `kosh` binary in your Go bin directory (typically `~/go/bin`).
-Ensure that this directory is included in your `PATH`:
+This installs the `kosh` binary into your Go bin directory (usually `~/go/bin`).
+Make sure this directory is part of your `PATH`.
+
+If it isn’t, add it manually:
 
 ```bash
 export PATH="$PATH:$(go env GOPATH)/bin"
@@ -27,9 +33,9 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 
 ---
 
-## Install From Source
+## Install from Source
 
-If you prefer manual builds or want to modify the project:
+If you want to build Kosh manually or modify the code:
 
 ```bash
 git clone https://github.com/gitKashish/kosh.git
@@ -37,7 +43,8 @@ cd kosh
 go build
 ```
 
-This compiles the binary for your current platform and outputs `kosh` in the project root.
+This will produce a `kosh` binary in the project root for your current platform.
+
 ---
 
 ## Verify Installation
@@ -48,18 +55,19 @@ Run:
 kosh help
 ```
 
-You should see the list of available commands:
+If the installation was successful, you should see:
 
 ```text
-kosh help               Show help and usage
-kosh init               Initialize a new encrypted vault
-kosh add                Add or update a credential
-kosh list               List credentials
-kosh get <label> <user> Retrieve a credential
-kosh search <query>     Adaptive fuzzy search
-kosh delete <id>        Delete a credential
+kosh help                 Show help and usage
+kosh init                 Initialize a new encrypted vault
+kosh add                  Add or update a credential
+kosh list                 List credentials
+kosh get <label> <user>   Retrieve a credential
+kosh search <query>       Adaptive fuzzy search
+kosh delete <id>          Delete a credential
 ```
 
 ---
 
-Kosh is now installed!
+Kosh is now ready to use!
+

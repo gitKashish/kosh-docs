@@ -1,23 +1,31 @@
 ---
 title: Adding Your First Credential
-description: A guide to add a credential after vault initialization.
+description: A guide to adding credentials after vault initialization.
 ---
 
-## Add a credential interactively
+## Add a Credential Interactively
+
+To add your first credential, run:
+
 ```bash
 kosh add
-```
+````
 
 You’ll be prompted for:
 
-- Label (example: github)
-- Username
-- Password (hidden input)
-- Confirm Password (hidden input)
+* **Label** (example: `github`)
+* **Username**
+* **Password** (hidden input)
+* **Confirm Password** (hidden input)
 
-## Overwriting / Updating an Entry
-If a credential already exists, simply run:
+---
+
+## Updating an Existing Entry
+
+If a credential already exists with the same label and username, simply run:
+
 ```bash
 kosh add
 ```
-Select the same label and username — Kosh will update / override the existing entry securely.
+
+Enter the same label and username again — Kosh will securely **update (overwrite)** the existing entry.

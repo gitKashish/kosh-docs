@@ -31,6 +31,17 @@ These filters apply substring-based matching on labels and usernames.
 
 ## Delete a Stored Credential
 
+:::caution[Deletion Is Permanent]
+When you delete a credential in Kosh, it is **irreversibly removed**.
+
+Kosh uses SQLite’s **secure-delete** mode, meaning:
+- The deleted row’s storage space is overwritten with **zeroes**.
+- No residual data remains in the file.
+- **Recovery is not possible**, even with forensic tools.
+
+Be absolutely sure before confirming a deletion.
+:::
+
 To remove a credential, use its **ID** (visible in `kosh list`):
 
 ```bash
@@ -41,6 +52,7 @@ You will be prompted to:
 
 1. Enter your **master password**, and
 2. Type a confirmation phrase (e.g., `delete <label> <user>`) to finalize deletion.
+
 
 ---
 

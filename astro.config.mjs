@@ -33,6 +33,13 @@ export default defineConfig({
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
+				{
+					label: 'Technical Documentation',
+					items: [
+						{ label: 'Encryption Architecture', slug: 'technical/encryption' },
+						{ label: 'Adaptive Search Algorithm', slug: 'technical/adaptive-search' },
+					]
+				}
 			],
 		}),
 	],

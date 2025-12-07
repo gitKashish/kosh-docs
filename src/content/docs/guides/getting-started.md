@@ -25,3 +25,12 @@ kosh init
 ````
 
 You’ll be prompted to create a **master password**, which is used to derive your encryption key using **Argon2id**.
+
+:::caution[Master Password Cannot Be Recovered]
+Kosh uses **zero-knowledge encryption** — your master password is *never stored*, *never transmitted*, and *cannot be recovered*.
+
+- **You cannot change the master password after vault creation (yet).**  
+- **If you lose the master password, all stored credentials become permanently inaccessible.**
+
+For now, it is highly recommended that you **write down your master password** and store it somewhere safe and offline.
+:::

@@ -78,7 +78,7 @@ userScore  = stringScore(queryUser, user)
 
 `stringScore()` evaluates relevance using:
 
-1. **Exact match → MAX_STRING_SCORE (5.0)**
+1. **Exact match → MAX_STRING_SCORE (1.0)**
 2. **Levenshtein similarity**
 
    * Converted to normalized similarity:
@@ -90,7 +90,6 @@ userScore  = stringScore(queryUser, user)
 
    * `+1.0` if target starts with query
    * `+0.5` if target contains query anywhere
-4. Final score is **clamped to MAX_STRING_SCORE**
 
 This makes Kosh robust to common user behaviors:
 

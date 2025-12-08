@@ -11,7 +11,7 @@ Kosh can be installed in three ways:
 
 ---
 
-## Install via GitHub Releases (Easiest)
+## Download Prebuilt Binary (Easiest)
 
 Prebuilt binaries are available for **macOS**, **Linux**, and **Windows**.
 

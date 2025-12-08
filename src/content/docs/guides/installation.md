@@ -3,10 +3,6 @@ title: Install Kosh
 description: How to install Kosh, the local-first encrypted password manager.
 ---
 
-:::note[Prerequisites]
-- Go **1.24+** — [Installation Guide](https://go.dev/doc/install)
-:::
-
 Kosh can be installed in three ways:
 
 1. **Download a prebuilt binary (easiest)**
@@ -45,6 +41,10 @@ Prebuilt binaries are available for **macOS**, **Linux**, and **Windows**.
 
 ## Using Go Install (Recommended for Go Users)
 
+:::note[Prerequisites]
+- Go **1.24+** — [Installation Guide](https://go.dev/doc/install)
+:::
+
 The quickest way to install Kosh is:
 
 ```bash
@@ -61,6 +61,10 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 ---
 
 ## Install from Source
+
+:::note[Prerequisites]
+- Go **1.24+** — [Installation Guide](https://go.dev/doc/install)
+:::
 
 If you want to build Kosh manually or modify the code:
 

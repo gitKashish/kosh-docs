@@ -4,7 +4,7 @@ description: How to install Kosh, the local-first encrypted password manager.
 ---
 
 :::note[Prerequisites]
-- Go **1.24+**
+- Go **1.24+** — [Installation Guide](https://go.dev/doc/install)
 :::
 
 Kosh can be installed in two ways:
